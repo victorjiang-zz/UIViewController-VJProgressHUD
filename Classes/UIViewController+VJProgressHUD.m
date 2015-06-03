@@ -39,7 +39,7 @@
     objc_setAssociatedObject(self, @selector(vj_progressHUD), vj_progressHUD, OBJC_ASSOCIATION_RETAIN_NONATOMIC);
 }
 
--(void)vj_setupProgressHUD
+- (void)vj_setupProgressHUD
 {
     if (self.vj_progressHUD) {
         return;
