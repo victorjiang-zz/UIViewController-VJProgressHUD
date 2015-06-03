@@ -1,4 +1,4 @@
-# UIViewController+FCProgressHUD
+# UIViewController+VJProgressHUD
 A UIViewController's Category With MBProgressHUD.
 
 ## Installation with CocoaPods
@@ -6,5 +6,5 @@ A UIViewController's Category With MBProgressHUD.
 ### Podfile
 
 ```ruby
-pod 'UIViewController+FCProgressHUD', :git => 'https://github.com/victorjiang/UIViewController-VJProgressHUD.git'
+pod 'UIViewController+VJProgressHUD', :git => 'https://github.com/victorjiang/UIViewController-VJProgressHUD.git'
 ```
