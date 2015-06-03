@@ -16,7 +16,7 @@
 /**
  *  The HUD that added on self
  */
-@property (strong, nonatomic,readonly) MBProgressHUD *progressHUD;
+@property (strong, nonatomic,readonly) MBProgressHUD *vj_progressHUD;
 
 /**
  *  Setup the progressHUD

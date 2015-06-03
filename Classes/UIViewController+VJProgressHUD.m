@@ -29,30 +29,30 @@
     }
 }
 
-- (MBProgressHUD *)progressHUD
+- (MBProgressHUD *)vj_progressHUD
 {
-    return objc_getAssociatedObject(self, @selector(progressHUD));
+    return objc_getAssociatedObject(self, @selector(vj_progressHUD));
 }
 
-- (void)setProgressHUD:(MBProgressHUD *)progressHUD
+- (void)setVj_progressHUD:(MBProgressHUD *)vj_progressHUD
 {
-    objc_setAssociatedObject(self, @selector(progressHUD), progressHUD, OBJC_ASSOCIATION_RETAIN_NONATOMIC);
+    objc_setAssociatedObject(self, @selector(vj_progressHUD), vj_progressHUD, OBJC_ASSOCIATION_RETAIN_NONATOMIC);
 }
 
 -(void)vj_setupProgressHUD
 {
-    if (self.progressHUD) {
+    if (self.vj_progressHUD) {
         return;
     }
-    self.progressHUD = [MBProgressHUD vj_addHUDTo:self];
+    self.vj_progressHUD = [MBProgressHUD vj_addHUDTo:self];
 }
 
 
 - (void)vj_didAddSubview:(UIView *)subview{
     [self vj_didAddSubview:subview];
     
-    if (self.progressHUD) {
-        [self bringSubviewToFront:self.progressHUD];
+    if (self.vj_progressHUD) {
+        [self bringSubviewToFront:self.vj_progressHUD];
     }
 }
 
@@ -64,11 +64,11 @@
 
 - (MBProgressHUD *)vj_progressHUD
 {
-    if (!self.view.progressHUD) {
+    if (!self.view.vj_progressHUD) {
         [self.view vj_setupProgressHUD];
     }
     
-    return self.view.progressHUD;
+    return self.view.vj_progressHUD;
 }
 
 - (void)vj_showTextHUD:(NSString *)text
