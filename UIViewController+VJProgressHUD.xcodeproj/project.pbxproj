@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		E29BB45260D87ADFDC882333 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CA5F4CD0ED35C33E450FFC83 /* libPods.a */; };
+		E94B98AFBAB9E71AE4DD3666 /* Pods_UIViewController_VJProgressHUD.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 37ACBD7618D1573EBC8B111E /* Pods_UIViewController_VJProgressHUD.framework */; };
 		EC5D29DC1B1E92BB00B04D64 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = EC5D29DB1B1E92BB00B04D64 /* main.m */; };
 		EC5D29DF1B1E92BB00B04D64 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = EC5D29DE1B1E92BB00B04D64 /* AppDelegate.m */; };
 		EC5D29E21B1E92BB00B04D64 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EC5D29E11B1E92BB00B04D64 /* ViewController.m */; };
@@ -15,7 +15,6 @@
 		EC5D29E71B1E92BB00B04D64 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EC5D29E61B1E92BB00B04D64 /* Images.xcassets */; };
 		EC5D29EA1B1E92BB00B04D64 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = EC5D29E81B1E92BB00B04D64 /* LaunchScreen.xib */; };
 		EC5D29F61B1E92BB00B04D64 /* UIViewController_VJProgressHUDTests.m in Sources */ = {isa = PBXBuildFile; fileRef = EC5D29F51B1E92BB00B04D64 /* UIViewController_VJProgressHUDTests.m */; };
-		EC5D2A021B1E9AE500B04D64 /* MBProgressHUD+VJViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EC5D2A011B1E9AE500B04D64 /* MBProgressHUD+VJViewController.m */; };
 		EC5D2A051B1E9AFD00B04D64 /* UIViewController+VJProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = EC5D2A041B1E9AFD00B04D64 /* UIViewController+VJProgressHUD.m */; };
 /* End PBXBuildFile section */
 
@@ -30,9 +29,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		5C678CAD82D156B7E1BC4302 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
-		5F939C3D378C29DA222CB61B /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
-		CA5F4CD0ED35C33E450FFC83 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		37ACBD7618D1573EBC8B111E /* Pods_UIViewController_VJProgressHUD.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_UIViewController_VJProgressHUD.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BB5ABB75FBA3F4019AC6B393 /* Pods-UIViewController+VJProgressHUD.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UIViewController+VJProgressHUD.release.xcconfig"; path = "Pods/Target Support Files/Pods-UIViewController+VJProgressHUD/Pods-UIViewController+VJProgressHUD.release.xcconfig"; sourceTree = "<group>"; };
 		EC5D29D61B1E92BB00B04D64 /* UIViewController+VJProgressHUD.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "UIViewController+VJProgressHUD.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EC5D29DA1B1E92BB00B04D64 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EC5D29DB1B1E92BB00B04D64 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -46,10 +44,9 @@
 		EC5D29EF1B1E92BB00B04D64 /* UIViewController+VJProgressHUDTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "UIViewController+VJProgressHUDTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EC5D29F41B1E92BB00B04D64 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EC5D29F51B1E92BB00B04D64 /* UIViewController_VJProgressHUDTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UIViewController_VJProgressHUDTests.m; sourceTree = "<group>"; };
-		EC5D2A001B1E9AE500B04D64 /* MBProgressHUD+VJViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MBProgressHUD+VJViewController.h"; sourceTree = "<group>"; };
-		EC5D2A011B1E9AE500B04D64 /* MBProgressHUD+VJViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "MBProgressHUD+VJViewController.m"; sourceTree = "<group>"; };
 		EC5D2A031B1E9AFD00B04D64 /* UIViewController+VJProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+VJProgressHUD.h"; sourceTree = "<group>"; };
 		EC5D2A041B1E9AFD00B04D64 /* UIViewController+VJProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+VJProgressHUD.m"; sourceTree = "<group>"; };
+		F6E686964607C5617F2BAAE4 /* Pods-UIViewController+VJProgressHUD.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UIViewController+VJProgressHUD.debug.xcconfig"; path = "Pods/Target Support Files/Pods-UIViewController+VJProgressHUD/Pods-UIViewController+VJProgressHUD.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,7 +54,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E29BB45260D87ADFDC882333 /* libPods.a in Frameworks */,
+				E94B98AFBAB9E71AE4DD3666 /* Pods_UIViewController_VJProgressHUD.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -71,19 +68,11 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		66200D973CDED052B655A021 /* Frameworks */ = {
+		BC11F4337BD9A656ECDE20A6 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				CA5F4CD0ED35C33E450FFC83 /* libPods.a */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		A6664350D9C376EF0399D048 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				5C678CAD82D156B7E1BC4302 /* Pods.debug.xcconfig */,
-				5F939C3D378C29DA222CB61B /* Pods.release.xcconfig */,
+				F6E686964607C5617F2BAAE4 /* Pods-UIViewController+VJProgressHUD.debug.xcconfig */,
+				BB5ABB75FBA3F4019AC6B393 /* Pods-UIViewController+VJProgressHUD.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -94,8 +83,8 @@
 				EC5D29D81B1E92BB00B04D64 /* UIViewController+VJProgressHUD */,
 				EC5D29F21B1E92BB00B04D64 /* UIViewController+VJProgressHUDTests */,
 				EC5D29D71B1E92BB00B04D64 /* Products */,
-				A6664350D9C376EF0399D048 /* Pods */,
-				66200D973CDED052B655A021 /* Frameworks */,
+				BC11F4337BD9A656ECDE20A6 /* Pods */,
+				F25B8113CC162EBCD137BB8E /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -153,13 +142,19 @@
 		EC5D29FF1B1E9AC800B04D64 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				EC5D2A001B1E9AE500B04D64 /* MBProgressHUD+VJViewController.h */,
-				EC5D2A011B1E9AE500B04D64 /* MBProgressHUD+VJViewController.m */,
 				EC5D2A031B1E9AFD00B04D64 /* UIViewController+VJProgressHUD.h */,
 				EC5D2A041B1E9AFD00B04D64 /* UIViewController+VJProgressHUD.m */,
 			);
 			path = Classes;
 			sourceTree = SOURCE_ROOT;
+		};
+		F25B8113CC162EBCD137BB8E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				37ACBD7618D1573EBC8B111E /* Pods_UIViewController_VJProgressHUD.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
@@ -168,11 +163,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = EC5D29F91B1E92BB00B04D64 /* Build configuration list for PBXNativeTarget "UIViewController+VJProgressHUD" */;
 			buildPhases = (
-				70B679C0C49DBF18BB5675D9 /* Check Pods Manifest.lock */,
+				A6FFC0A9E408F6C07E7A172C /* 📦 Check Pods Manifest.lock */,
 				EC5D29D21B1E92BB00B04D64 /* Sources */,
 				EC5D29D31B1E92BB00B04D64 /* Frameworks */,
 				EC5D29D41B1E92BB00B04D64 /* Resources */,
-				8A088032A2D6034A02A15032 /* Copy Pods Resources */,
+				B1C77E5328FC988BAC2032B5 /* 📦 Embed Pods Frameworks */,
+				D99E8AD168547BCC3A2CA5D3 /* 📦 Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -259,14 +255,14 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		70B679C0C49DBF18BB5675D9 /* Check Pods Manifest.lock */ = {
+		A6FFC0A9E408F6C07E7A172C /* 📦 Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Check Pods Manifest.lock";
+			name = "📦 Check Pods Manifest.lock";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -274,19 +270,34 @@
 			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
-		8A088032A2D6034A02A15032 /* Copy Pods Resources */ = {
+		B1C77E5328FC988BAC2032B5 /* 📦 Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Copy Pods Resources";
+			name = "📦 Embed Pods Frameworks";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-UIViewController+VJProgressHUD/Pods-UIViewController+VJProgressHUD-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D99E8AD168547BCC3A2CA5D3 /* 📦 Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-UIViewController+VJProgressHUD/Pods-UIViewController+VJProgressHUD-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -300,7 +311,6 @@
 				EC5D2A051B1E9AFD00B04D64 /* UIViewController+VJProgressHUD.m in Sources */,
 				EC5D29DF1B1E92BB00B04D64 /* AppDelegate.m in Sources */,
 				EC5D29DC1B1E92BB00B04D64 /* main.m in Sources */,
-				EC5D2A021B1E9AE500B04D64 /* MBProgressHUD+VJViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -426,7 +436,7 @@
 		};
 		EC5D29FA1B1E92BB00B04D64 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 5C678CAD82D156B7E1BC4302 /* Pods.debug.xcconfig */;
+			baseConfigurationReference = F6E686964607C5617F2BAAE4 /* Pods-UIViewController+VJProgressHUD.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "UIViewController+VJProgressHUD/Info.plist";
@@ -437,7 +447,7 @@
 		};
 		EC5D29FB1B1E92BB00B04D64 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 5F939C3D378C29DA222CB61B /* Pods.release.xcconfig */;
+			baseConfigurationReference = BB5ABB75FBA3F4019AC6B393 /* Pods-UIViewController+VJProgressHUD.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "UIViewController+VJProgressHUD/Info.plist";

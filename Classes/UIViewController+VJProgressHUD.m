@@ -8,7 +8,6 @@
 
 #import "UIViewController+VJProgressHUD.h"
 #import <objc/runtime.h>
-#import "MBProgressHUD+VJViewController.h"
 
 #pragma mark - UIView+VJProgressHUD
 
@@ -23,6 +22,7 @@
     Method swizzledMethod = class_getInstanceMethod(self, swizzledSelector);
     
     if (class_addMethod(self, originalSelector, method_getImplementation(swizzledMethod), method_getTypeEncoding(swizzledMethod))) {
+        
         class_replaceMethod(self, swizzledSelector, method_getImplementation(originalMethod), method_getTypeEncoding(originalMethod));
     } else {
         method_exchangeImplementations(originalMethod, swizzledMethod);
@@ -44,11 +44,14 @@
     if (self.vj_progressHUD) {
         return;
     }
-    self.vj_progressHUD = [MBProgressHUD vj_addHUDTo:self];
+    
+    self.vj_progressHUD = [MBProgressHUD showHUDAddedTo:self animated:YES];
+    self.vj_progressHUD.removeFromSuperViewOnHide = NO;
 }
 
 
-- (void)vj_didAddSubview:(UIView *)subview{
+- (void)vj_didAddSubview:(UIView *)subview
+{
     [self vj_didAddSubview:subview];
     
     if (self.vj_progressHUD) {
@@ -78,7 +81,16 @@
 
 - (void)vj_showTextHUD:(NSString *)text andHideAfterDelay:(NSTimeInterval)delay
 {
-    [self.vj_progressHUD vj_showTextHUD:text andHideAfterDelay:delay animated:YES];
+    if ([text length] == 0) {
+        [self.vj_progressHUD hide:NO afterDelay:0];
+        return;
+    }
+    
+    self.vj_progressHUD.mode = MBProgressHUDModeText;
+    self.vj_progressHUD.labelText = nil;
+    self.vj_progressHUD.detailsLabelText = text;
+    [self.vj_progressHUD show:YES];
+    [self vj_hideHUDAfterDelay:delay];
 }
 
 - (void)vj_showProgressHUD
@@ -93,7 +105,10 @@
 
 - (void)vj_showHUDWithText:(NSString *)text hudMode:(MBProgressHUDMode)mode
 {
-    [self.vj_progressHUD vj_showHUDWithText:text hudMode:mode animated:YES];
+    self.vj_progressHUD.mode = mode;
+    self.vj_progressHUD.labelText = text;
+    self.vj_progressHUD.detailsLabelText = nil;
+    [self.vj_progressHUD show:YES];
 }
 
 - (void)vj_hideHUD
